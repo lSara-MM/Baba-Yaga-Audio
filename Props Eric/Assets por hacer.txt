@@ -1,0 +1,10 @@
+1-Valla Done
+2-Tumbas Done
+3-Muelles Done
+4-Barca Done
+5-Farol Done
+6-Paredes Done
+7-Techo Done
+8-Puerta casa
+9-Cartel Done
+10-Ventanas Done

@@ -6,6 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Main.unity
+    path: Assets/Excel Enjoyer.unity
     guid: 659aa2f26f0be0a4c9c4a0b19a552368
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

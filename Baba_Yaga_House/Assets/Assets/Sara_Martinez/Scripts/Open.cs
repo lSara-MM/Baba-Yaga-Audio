@@ -28,7 +28,7 @@ public class Open : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(hasEntered)
+        if (hasEntered)
         {
             if (Input.GetKey(KeyCode.E) && doOnce)
             {
@@ -38,7 +38,7 @@ public class Open : MonoBehaviour
                 { _animator.SetBool("Interacted", true); }
 
                 fx.SetActive(true);
-                fx2.SetActive(true);                
+                fx2.SetActive(true);
             }
             else if (Input.GetKey(KeyCode.E) && !doOnce)
             {
@@ -75,6 +75,6 @@ public class Open : MonoBehaviour
             { _animator.SetBool("Interacted", false); }
             fx.SetActive(false);
             fx2.SetActive(false);
-        }        
+        }
     }
 }

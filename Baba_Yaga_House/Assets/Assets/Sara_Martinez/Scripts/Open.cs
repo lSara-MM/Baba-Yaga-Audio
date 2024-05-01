@@ -21,8 +21,15 @@ public class Open : MonoBehaviour
     void Start()
     {
         _animator = this.GetComponent<Animator>();
-        fx.SetActive(false);
-        fx2.SetActive(false);
+
+        if (fx != null)
+        {
+            fx.SetActive(false);
+        }
+        if (fx2 != null)
+        {
+            fx2.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -37,15 +44,28 @@ public class Open : MonoBehaviour
                 if (_animator != null)
                 { _animator.SetBool("Interacted", true); }
 
-                fx.SetActive(true);
-                fx2.SetActive(true);
+                if (fx != null)
+                {
+                    fx.SetActive(true);
+                }
+                if (fx2 != null)
+                {
+                    fx2.SetActive(true);
+                }
             }
             else if (Input.GetKey(KeyCode.E) && !doOnce)
             {
                 if (_animator != null)
                 { _animator.SetBool("Interacted", _animator.GetBool("Interacted")); }
-                fx.SetActive(!fx.activeSelf);
-                fx2.SetActive(!fx2.activeSelf);
+
+                if (fx != null)
+                {
+                    fx.SetActive(!fx.activeSelf);
+                }
+                if (fx2 != null)
+                {
+                    fx2.SetActive(!fx2.activeSelf);
+                }
             }
             else if (isTrigger)
             {
@@ -54,8 +74,14 @@ public class Open : MonoBehaviour
                 if (_animator != null)
                 { _animator.SetBool("Interacted", true); }
 
-                fx.SetActive(true);
-                fx2.SetActive(true);
+                if (fx != null)
+                {
+                    fx.SetActive(true);
+                }
+                if (fx2 != null)
+                {
+                    fx2.SetActive(true);
+                }
             }
         }
     }
@@ -73,8 +99,15 @@ public class Open : MonoBehaviour
         {
             if (_animator != null)
             { _animator.SetBool("Interacted", false); }
-            fx.SetActive(false);
-            fx2.SetActive(false);
+
+            if (fx != null)
+            {
+                fx.SetActive(false);
+            }
+            if (fx2 != null)
+            {
+                fx2.SetActive(false);
+            }
         }
     }
 }

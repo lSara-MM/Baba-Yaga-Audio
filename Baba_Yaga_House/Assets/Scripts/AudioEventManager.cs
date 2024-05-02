@@ -6,12 +6,12 @@ public class AudioEventManager : MonoBehaviour
 {
     [SerializeField] private AudioSource _audio;
 
-    public void PlayAudioEvent(bool play)
+    public void PlayAudioEvent()
     {
         _audio.Play();
     }
 
-    public void StopAudioEvent(bool play)
+    public void StopAudioEvent()
     {
         _audio.Stop();
     }

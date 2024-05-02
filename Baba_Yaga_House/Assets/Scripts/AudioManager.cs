@@ -53,26 +53,26 @@ public class AudioManager : MonoBehaviour
 
     private void OnCollisionStay(Collision collision)
     {
-        Debug.Log(collision.gameObject.tag);
+        //Debug.Log(collision.gameObject.tag);
         switch (collision.gameObject.tag)
         {
             case "Dock":
                 {
-                    Debug.Log("Dock");
+                    //Debug.Log("Dock");
                     currentAudios = dockAudios;
                     AudioTimer();
                     break;
                 }
             case "Grass":
                 {
-                    Debug.Log("Grass");
+                    //Debug.Log("Grass");
                     currentAudios = grassAudios;
                     AudioTimer();
                     break;
                 }
             case "Indoor":
                 {
-                    Debug.Log("Indoor");
+                    //Debug.Log("Indoor");
                     currentAudios = indoorAudios;
                     AudioTimer();
                     break;

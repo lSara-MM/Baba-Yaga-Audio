@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ActivateSound : MonoBehaviour
 {
-    public GameObject fx;
+    public GameObject fx = null;
 
     [SerializeField]
     private bool doOnce = false;
@@ -25,7 +25,7 @@ public class ActivateSound : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.E) || doOnce)
         {
-            Debug.Log("EEEEEEEEEEEE");
+            Debug.Log(fx.name);
             fx.SetActive(true);
         }
     }

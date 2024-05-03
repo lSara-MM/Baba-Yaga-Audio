@@ -9,8 +9,8 @@ public class MusicEventManager : MonoBehaviour
     public AudioMixerSnapshot tensionSnapshot;
     //public Collider collisionForChange;
 
-    [SerializeField] float slowTransistionTime = 2.0f;
-    [SerializeField] float fastTransistionTime = 0.5f;
+    [SerializeField] float slowTransistionTime = 4.0f;
+    [SerializeField] float fastTransistionTime = 0.8f;
 
     // Start is called before the first frame update
     void Start()
@@ -24,9 +24,9 @@ public class MusicEventManager : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "Dock") 
+        if (other.gameObject.tag == "Tension") 
         {
             //calmSnapshot.TransitionTo(fastTransistionTime);
             calmSnapshot.TransitionTo(slowTransistionTime);
@@ -34,9 +34,9 @@ public class MusicEventManager : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit(Collision collision)
+    private void OnTriggerExit(Collider other)
     {
-        if (collision.gameObject.tag == "Dock")
+        if (other.gameObject.tag == "Tension")
         {
             
             tensionSnapshot.TransitionTo(fastTransistionTime);

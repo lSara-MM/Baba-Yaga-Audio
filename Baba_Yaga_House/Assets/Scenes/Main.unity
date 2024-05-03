@@ -33821,9 +33821,10 @@ GameObject:
   - component: {fileID: 2091545295}
   - component: {fileID: 2091545297}
   - component: {fileID: 2091545296}
+  - component: {fileID: 2091545298}
   m_Layer: 0
   m_Name: Music
-  m_TagString: Untagged
+  m_TagString: Tension
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33836,7 +33837,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2091545294}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 55.92761, y: 11.619397, z: 21.066816}
+  m_LocalPosition: {x: 31.6, y: 11.619397, z: 15.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34035,6 +34036,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!65 &2091545298
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091545294}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 45.1, y: 16.48, z: 31.48}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2092424109
 GameObject:
   m_ObjectHideFlags: 0

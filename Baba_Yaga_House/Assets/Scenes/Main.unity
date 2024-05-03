@@ -62934,7 +62934,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6265863508971899810 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6312115323930454446, guid: 4e016274e0057864abaa8242b20a25b1, type: 3}

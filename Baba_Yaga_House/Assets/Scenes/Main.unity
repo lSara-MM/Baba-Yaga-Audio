@@ -6788,6 +6788,18 @@ PrefabInstance:
       propertyPath: OutputAudioMixerGroup
       value: 
       objectReference: {fileID: -7355254962604973423, guid: 8b96edf1d1270904093a1d8457b65b0b, type: 2}
+    - target: {fileID: 1379265331664473338, guid: 69ed31b50b18e374ab55323a3f95d03e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2765725680269768373, guid: 69ed31b50b18e374ab55323a3f95d03e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5480307649519378801, guid: 69ed31b50b18e374ab55323a3f95d03e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6324955191492198174, guid: 69ed31b50b18e374ab55323a3f95d03e, type: 3}
       propertyPath: m_Name
       value: First Person Controller Variant
@@ -6856,7 +6868,14 @@ PrefabInstance:
       propertyPath: 'indoorAudios.Array.data[3]'
       value: 
       objectReference: {fileID: 8300000, guid: 5c9bdbce37b06a24fa6ea793bcfd1907, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4555296527167806212, guid: 69ed31b50b18e374ab55323a3f95d03e, type: 3}
+    - {fileID: 6323207971469673944, guid: 69ed31b50b18e374ab55323a3f95d03e, type: 3}
+    - {fileID: 8828467857761996888, guid: 69ed31b50b18e374ab55323a3f95d03e, type: 3}
+    - {fileID: 2721838436937889219, guid: 69ed31b50b18e374ab55323a3f95d03e, type: 3}
+    - {fileID: 1995975141708399539, guid: 69ed31b50b18e374ab55323a3f95d03e, type: 3}
+    - {fileID: 5798681839658978204, guid: 69ed31b50b18e374ab55323a3f95d03e, type: 3}
+    - {fileID: 8683170823672081137, guid: 69ed31b50b18e374ab55323a3f95d03e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -23310,7 +23329,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 5405211260064814688, guid: 8b96edf1d1270904093a1d8457b65b0b, type: 2}
   m_audioClip: {fileID: 8300000, guid: 6e7df62ec1b832243bff7ab9582ced79, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.15
+  m_Volume: 0.409
   m_Pitch: 1
   Loop: 0
   Mute: 0

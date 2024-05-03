@@ -28,8 +28,9 @@ public class MusicEventManager : MonoBehaviour
     {
         if (collision.gameObject.tag == "Dock") 
         {
-            calmSnapshot.TransitionTo(fastTransistionTime);
-            tensionSnapshot.TransitionTo(slowTransistionTime);
+            //calmSnapshot.TransitionTo(fastTransistionTime);
+            calmSnapshot.TransitionTo(slowTransistionTime);
+            
         }
     }
 
@@ -37,8 +38,9 @@ public class MusicEventManager : MonoBehaviour
     {
         if (collision.gameObject.tag == "Dock")
         {
-            calmSnapshot.TransitionTo(slowTransistionTime);
+            
             tensionSnapshot.TransitionTo(fastTransistionTime);
+            //tensionSnapshot.TransitionTo(fastTransistionTime);
         }
     }
 }

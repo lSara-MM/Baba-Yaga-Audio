@@ -4060,7 +4060,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   calmSnapshot: {fileID: 24500006, guid: 8b96edf1d1270904093a1d8457b65b0b, type: 2}
-  tensionSnapshot: {fileID: 24500006, guid: 8b96edf1d1270904093a1d8457b65b0b, type: 2}
+  tensionSnapshot: {fileID: -6448398142040085133, guid: 8b96edf1d1270904093a1d8457b65b0b, type: 2}
   slowTransistionTime: 2
   fastTransistionTime: 0.5
 --- !u!1001 &226308585
